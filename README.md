@@ -40,11 +40,11 @@ This project leverages aviation data from 1970 to 2020 to analyze trends, unders
 
 ## **Objectives**
 
-![#FFE4E1](https://via.placeholder.com/15/FFE4E1/000000?text=+) Identify and analyze global aviation trends across 50 years of data  
-![#E6E6FA](https://via.placeholder.com/15/E6E6FA/000000?text=+) Examine the distribution of incidents across countries and continents  
-![#F0F8FF](https://via.placeholder.com/15/F0F8FF/000000?text=+) Assess changes in incident rates over time to guide safety improvements  
-![#FFF0F5](https://via.placeholder.com/15/FFF0F5/000000?text=+) Discover hidden patterns in aviation safety data using statistical analysis  
-![#FAFAD2](https://via.placeholder.com/15/FAFAD2/000000?text=+) Provide actionable insights for aviation safety protocols and risk assessment  
+- **Identify and analyze** global aviation trends across 50 years of data  
+- **Examine the distribution** of incidents across countries and continents  
+- **Assess changes** in incident rates over time to guide safety improvements  
+- **Discover hidden patterns** in aviation safety data using statistical analysis  
+- **Provide actionable insights** for aviation safety protocols and risk assessment  
 
 ---
 
@@ -84,11 +84,11 @@ This project leverages aviation data from 1970 to 2020 to analyze trends, unders
 
 | Category | Libraries | Purpose |
 |----------|-----------|---------|
-| ![#FFE4E1](https://via.placeholder.com/15/FFE4E1/000000?text=+) **Data Analysis** | Pandas, NumPy | Data manipulation and statistical analysis |
-| ![#E6E6FA](https://via.placeholder.com/15/E6E6FA/000000?text=+) **Data Visualization** | Matplotlib, Seaborn, Plotly | Static and interactive visualizations |
-| ![#F0F8FF](https://via.placeholder.com/15/F0F8FF/000000?text=+) **Data Cleaning** | Scikit-Learn, TQDM | Imputation and progress tracking |
-| ![#FFF0F5](https://via.placeholder.com/15/FFF0F5/000000?text=+) **Statistical Analysis** | SciPy, Statsmodels | Trend analysis and hypothesis testing |
-| ![#FAFAD2](https://via.placeholder.com/15/FAFAD2/000000?text=+) **Geospatial** | GeoPandas, Folium | Geographic mapping and spatial analysis |
+| **Data Analysis** | Pandas, NumPy | Data manipulation and statistical analysis |
+| **Data Visualization** | Matplotlib, Seaborn, Plotly | Static and interactive visualizations |
+| **Data Cleaning** | Scikit-Learn, TQDM | Imputation and progress tracking |
+| **Statistical Analysis** | SciPy, Statsmodels | Trend analysis and hypothesis testing |
+| **Geospatial** | GeoPandas, Folium | Geographic mapping and spatial analysis |
 
 ---
 
@@ -129,69 +129,21 @@ This project leverages aviation data from 1970 to 2020 to analyze trends, unders
 
 ### **Temporal Trends:**
 
-<table>
-<tr style="background-color:#FFE4E1;">
-<td><strong>Period</strong></td>
-<td><strong>Finding</strong></td>
-<td><strong>Impact</strong></td>
-</tr>
-<tr>
-<td>1970-2020</td>
-<td>300% increase in reported incidents</td>
-<td>Enhanced reporting standards needed</td>
-</tr>
-<tr>
-<td>2010-2019</td>
-<td>45% increase (steepest growth)</td>
-<td>Rapid aviation expansion period</td>
-</tr>
-<tr>
-<td>2020</td>
-<td>60% decline</td>
-<td>COVID-19 impact on air travel</td>
-</tr>
-</table>
+| Period | Finding | Impact |
+|--------|---------|---------|
+| **1970-2020** | 300% increase in reported incidents | Enhanced reporting standards needed |
+| **2010-2019** | 45% increase (steepest growth) | Rapid aviation expansion period |
+| **2020** | 60% decline | COVID-19 impact on air travel |
 
 ### **Geographical Distribution:**
 
-<table>
-<tr style="background-color:#E6E6FA;">
-<td><strong>Rank</strong></td>
-<td><strong>Country</strong></td>
-<td><strong>Total Incidents</strong></td>
-<td><strong>% of Global</strong></td>
-</tr>
-<tr>
-<td>1</td>
-<td>United States</td>
-<td>2,847</td>
-<td>28.3%</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Japan</td>
-<td>1,423</td>
-<td>14.1%</td>
-</tr>
-<tr>
-<td>3</td>
-<td>United Kingdom</td>
-<td>967</td>
-<td>9.6%</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Germany</td>
-<td>812</td>
-<td>8.1%</td>
-</tr>
-<tr>
-<td>5</td>
-<td>France</td>
-<td>756</td>
-<td>7.5%</td>
-</tr>
-</table>
+| Rank | Country | Total Incidents | % of Global |
+|------|---------|----------------|-------------|
+| **1** | United States | 2,847 | 28.3% |
+| **2** | Japan | 1,423 | 14.1% |
+| **3** | United Kingdom | 967 | 9.6% |
+| **4** | Germany | 812 | 8.1% |
+| **5** | France | 756 | 7.5% |
 
 ### **Key Observations:**  
 - **Seasonal Pattern:** 35% higher incidents in winter months
@@ -262,3 +214,22 @@ This project leverages aviation data from 1970 to 2020 to analyze trends, unders
 
 ### **Prerequisites:**
 ```bash
+Python 3.9+
+Jupyter Notebook
+Git
+# Clone repository
+git clone https://github.com/Cazzy-Aporbo/aviation-analysis.git
+cd aviation-analysis
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run analysis
+python src/aviation_analysis.py
+
+# Or launch Jupyter notebook
+jupyter notebook notebooks/aviation_analysis.ipynb
